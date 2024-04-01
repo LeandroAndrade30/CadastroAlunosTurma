@@ -4,14 +4,14 @@ using System.Text;
 
 namespace CadastroAlunosTurma
 {
-   public static class CadastroDeAlunos
+    public static class CadastroDeAlunos
     {
         private static Aluno[] _alunos = new Aluno[100];
         private static int _proximoIndice = 0;
 
         public static void AdicionarAluno(string nome, string turma)
         {
-            if(_proximoIndice < _alunos.Length)
+            if (_proximoIndice < _alunos.Length)
             {
 
                 _alunos[_proximoIndice] = new Aluno()
@@ -37,9 +37,9 @@ namespace CadastroAlunosTurma
         }
         public static void ExibirTodosOsAlunos()
         {
-            foreach(Aluno Aluno in _alunos)
+            foreach (Aluno Aluno in _alunos)
             {
-                if(Aluno!=null)
+                if (Aluno != null)
                 {
                     Console.WriteLine($"\nÍndice: {Aluno.Indice}");
                     Console.WriteLine($"\nId: {Aluno.Id}");

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CadastroAlunosTurma
 {
-    class Aluno
+    public class Aluno
     {
         public int Indice { get; set; }
         public int Id { get; set; }
